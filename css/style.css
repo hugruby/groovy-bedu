@@ -1,0 +1,19 @@
+/**/
+p{
+    color:#46484c;
+    font-weight: bold;
+    text-transform: capitalize;
+}  
+b{
+    color:#8b8b8bcc
+}
+input{
+    background-color: #025157; 
+    color:#fff;
+}
+body{
+    background-color:#fffbf7 ;
+}
+img{
+    width:200px; height:50px;
+}
