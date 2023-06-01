@@ -1,2 +1,2 @@
 # groovy-bedu
-Identifica proyecto escencial para curso de Bedu.
+Identifica proyecto esencial para curso de Bedu.
