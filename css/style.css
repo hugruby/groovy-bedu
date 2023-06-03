@@ -1,4 +1,9 @@
 /**/
+
+body{
+    background-color:#fffbf7 ;
+}
+
 p{
     color:#46484c;
     font-weight: bold;
@@ -7,13 +12,81 @@ p{
 b{
     color:#8b8b8bcc
 }
+
 input{
     background-color: #025157; 
     color:#fff;
 }
-body{
-    background-color:#fffbf7 ;
+
+header {
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-family:sans-serif;
+    font-size: 18px;
 }
-img{
-    width:200px; height:50px;
+
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 20em;
+}
+
+
+
+nav {
+    width: 85%;
+}
+
+nav ul{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+} 
+
+nav ul li{
+    display: inline;
+    margin-right: 100px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#025157;
+}
+
+nav ul li a:visited {
+    color:#025157;
+}
+
+nav ul li a:hover {
+    color: #494cef;
+    text-decoration: dotted;
+}
+
+.actions{
+    width: 23%;
+    text-align: right;
+    margin-right: 3%;
+}
+
+.actions button{
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family:sans-serif;
+  border-radius: 10px; 
+}
+
+
+.actions button:hover {
+    background-color: #555;
 }
