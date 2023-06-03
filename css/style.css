@@ -1,16 +1,19 @@
 /**/
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=Merriweather&family=Roboto&display=swap');
+
+
+html{
+    font-size: 10px;
+}
+
+@media (min-width: 600px){
+    html{
+        font-size: 70%;
+    }
+}
 
 body{
     background-color:#fffbf7 ;
-}
-
-p{
-    color:#46484c;
-    font-weight: bold;
-    text-transform: capitalize;
-}  
-b{
-    color:#8b8b8bcc
 }
 
 input{
@@ -89,4 +92,30 @@ nav ul li a:hover {
 
 .actions button:hover {
     background-color: #555;
+}
+
+
+main{
+    text-align: center;
+    align-content: center;
+}
+
+main p{
+    width: 80%;
+    margin: 0 auto; /* Agregar margen automático horizontal para centrar */
+    color: #46484c;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+    font-size: 2rem; /* base navegador 16px * 2 = 32px */
+    /* text-align-last: center; Alinear el último renglón al centro */
+    /* text-transform: capitalize; */
+}  
+
+main b{
+    color:#8b8b8bcc
+}
+
+main h1{
+    font-family: 'Chokokutai', cursive;
+    font-size: 3rem;
 }
