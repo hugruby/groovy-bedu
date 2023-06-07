@@ -30,6 +30,11 @@ header {
     justify-content: center;
     font-family:sans-serif;
     font-size: 18px;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
 }
 
 
@@ -101,6 +106,7 @@ nav ul li a:hover {
 main{
     text-align: center;
     align-content: center;
+    margin-top: 120px;
 }
 
 main p{
@@ -123,4 +129,48 @@ main h1{
     font-size: 3rem;
     position: sticky;
     top:0;
+    justify-content: center;
 }
+
+.promo {
+    display: flex;
+    margin:100px auto;
+    align-items:center;
+    position: relative;
+    width: 70%;
+  }
+
+  .promo img{
+    width: 50px;
+    align-self:self-end;
+    position: sticky;
+    position: absolute;
+    left: 15%;
+  }
+
+  .articulo{
+    
+    font-family: 'Merriweather', serif;
+    color:#025157;
+    font-size: 2rem;
+  }
+
+  .articulo p{
+    color:#343434;
+    margin-bottom: 10px;
+    
+  }
+
+  .articulo div{
+    margin-top: 10px;
+  }
+
+  .articulo div p{
+    color:#204E80;
+  }
+
+  .articulo h3{
+    color:#204E80;
+  }
+  
+  
