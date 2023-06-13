@@ -173,4 +173,77 @@ main h1{
     color:#204E80;
   }
   
-  
+  .success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.success-stories .overview figure img {
+    width: 50px;
+}
+
+button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.car{
+    width: 200px;
+    height: 200px;
+}
+
+.car1{
+    background-color: blue;
+}
+
+.car2{
+    background-color: red;
+}
+
+.car3{
+    background-color: yellow;
+}
+
+.car4{
+    background-color: green;
+}
+
+.features{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template: repeat(2,300px) / repeat(2,1fr)
+}
