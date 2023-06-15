@@ -21,6 +21,35 @@ a{
     text-decoration: none;
 }
 
+.logo{
+    width: 35%;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+ .navbar {
+    background-color: #fffbf7;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+  }
+
+  .navbar ul li{
+    background-color: #fffbf7;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+  }
+
+/*
+
 header {
     margin: 0;
     padding:0;
@@ -32,17 +61,6 @@ header {
     right: 0;
     background-color: #fffbf7;
 }
-
-
-.logo{
-    width: 16%;
-}
-
-.logo img{
-    max-width: 100%;
-}
-
-
 
 nav {
     width: 64%;
@@ -64,7 +82,7 @@ nav ul li{
 
 nav ul li a:visited {
     color: #025157;   
-    text-decoration: none; /* o la decoración deseada */
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -74,7 +92,7 @@ nav ul li a:hover {
     display: inline;
     height: 100%;
     color: white;
-}
+} */
 
 
 
@@ -409,7 +427,7 @@ button {
         display: none;
     }
 
-    nav {
+    /* nav {
         width: 90%;
         height: 90%;
     }
@@ -424,7 +442,7 @@ button {
         padding-left: 7.5%;
         padding-top: 2.1%;
         padding-bottom: 2.2%;
-    }
+    } */
 
 
 }
@@ -455,7 +473,7 @@ button {
         display: none;
     }
 
-    nav {
+    /* nav {
         width: 90%;
         height: 100%;
     }
@@ -469,7 +487,7 @@ button {
         padding-left: 7.5%;
         padding-top: 1.5%;
         padding-bottom: 1.7%;
-    }
+    } */
 
     .actions button{
         display: none;
@@ -498,7 +516,7 @@ button {
         width: 100%;
     }
 
-    nav ul {
+    /* nav ul {
         height: 100%;
         width: 85%;
     }
@@ -513,14 +531,14 @@ button {
         padding-left: 7.5%;
         padding-top: 2.2%;
         padding-bottom: 2.3%;
-    }
+    } */
 
 }
 
 /** dispositivos grandes (desktops) */
 @media (width > 991px) and (width <= 1199px) {
 
-    nav ul li a{
+    /* nav ul li a{
         font-size: 2vw;
         font-weight: bold;  
         color: white;  
@@ -528,13 +546,13 @@ button {
         padding-left: 7.5%;
         padding-top: 2.7%;
         padding-bottom: 2.7%;
-    }
+    } */
 }
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (width > 1199px) {
 
-    nav ul li a{
+    /* nav ul li a{
         font-size: 2vw;
         font-weight: bold;  
         color: white;  
@@ -542,5 +560,5 @@ button {
         padding-left: 7.5%;
         padding-top: 2.7%;
         padding-bottom: 2.7%;
-    }
+    } */
 }
