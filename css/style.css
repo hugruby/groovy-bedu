@@ -6,11 +6,6 @@ html{
     font-size: 10px;
 }
 
-@media (min-width: 600px){
-    html{
-        font-size: 70%;
-    }
-}
 
 body{
     background-color:#fffbf7 ;
@@ -31,75 +26,74 @@ header {
     padding:0;
     display: flex;
     align-items:center;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font-family:sans-serif;
-    font-size: 18px;
     position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #fffbf7;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
 
 
 .logo{
-    width: 20%;
+    width: 16%;
 }
 
 .logo img{
-    width: 20em;
+    max-width: 100%;
 }
 
 
 
 nav {
-    width: 70%;
-    
+    width: 64%;
+    height: 100%;
+    text-align: center;
 }
 
 nav ul{
-    text-align: center;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
 } 
 
 nav ul li{
     display: inline;
-    margin-right: 100px;
+    height: 100%;
+    width: 100%;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color:#025157;
-}
 
 nav ul li a:visited {
-    color:#025157;
+    color: #025157;   
+    text-decoration: none; /* o la decoración deseada */
 }
 
 nav ul li a:hover {
-    color: #494cef;
-    text-decoration: dotted;
+    color: white;
+    background-color: #204E80;
+    box-sizing: border-box;
+    display: inline;
+    height: 100%;
+    color: white;
 }
 
+
+
 .actions{
-    width: 20%;
-    text-align: right;
     margin-right: 3%;
     position: fixed;
     right: 0%;
 }
 
 .actions button{
-  padding: 10px 20px;
+  padding: 1em 2em;
+  width: 100%;
   background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
   font-family:sans-serif;
   border-radius: 10px; 
+  font-size: 1.5em;
 }
 
 
@@ -111,7 +105,7 @@ nav ul li a:hover {
 main{
     text-align: center;
     align-content: center;
-    margin-top: 120px;
+    margin-top: 7%;
 }
 
 main p{
@@ -141,42 +135,46 @@ main h1{
     margin:100px auto;
     align-items:center;
     width: 70%;
-  }
+    z-index: -1;
+}
 
-  .promo img{
+.promo img{
     width: 50px;
     align-self:self-end;
     position: absolute;
     z-index: -1;
     left: 25%;
-  }
+}
 
-  .articulo{
-    
+.promo video{
+    width: 100%;
+    z-index: -1;
+}
+
+.articulo{   
     font-family: 'Merriweather', serif;
     color:#025157;
     font-size: 2rem;
-  }
+}
 
-  .articulo p{
+.articulo p{
     color:#343434;
     margin-bottom: 10px;
-    
-  }
+}
 
-  .articulo div{
+.articulo div{
     margin-top: 10px;
-  }
+}
 
-  .articulo div p{
+.articulo div p{
     color:#204E80;
-  }
+}
 
-  .articulo h3{
+.articulo h3{
     color:#204E80;
-  }
+}
   
-  .success-stories {
+.success-stories {
     background-color: #a1d683;
     padding: 5% 15%;
     display: flex;
@@ -267,19 +265,19 @@ button {
 
 
 .features .feature-card .feature-content h3 {
-    font-size: 24px;
+    font-size: 2vw;
     color: #343434;
     font-weight: 400;
 }
 
 .features .feature-card .feature-content p {
-    font-size: 16px;
+    font-size: 1vw;
     color: #7e7e7e;
     font-weight: 400;
 }
 
 .features .feature-card .feature-content a {
-    font-size: 16px;
+    font-size: 1vw;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
@@ -367,8 +365,8 @@ button {
 }
 
 .how-does-it-work .steps .card-step .card-step-body p {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     color: #46484c;
     font-weight: 400;
     height: 85px;
@@ -381,4 +379,168 @@ button {
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
+}
+
+@media (color) and (width>500px) {
+    
+}
+/** dispositivos móviles en vista viewport (vertical) */
+@media  (width <= 575px) {
+    .actions button{
+        display: none;
+    }
+
+    .how-does-it-work .steps{
+        display:grid;
+        grid-template: repeat(4,1fr) / repeat(1,1fr);
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .promo {
+        flex-direction: column;
+    }
+
+    .promo img{
+        display: none;
+    }
+
+    nav {
+        width: 90%;
+        height: 90%;
+    }
+
+
+    nav ul li a{
+        height: 100%;
+        font-size: 3.5vw;
+        font-weight: bold;  
+        color: white;  
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        padding-top: 2.1%;
+        padding-bottom: 2.2%;
+    }
+
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (width > 575px) and (width <= 767px) {
+
+    .how-does-it-work .steps{
+        display:grid;
+        grid-template: repeat(4,1fr) / repeat(2,1fr);
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .how-does-it-work .steps .card-step-body p{
+        display: none;
+    }
+
+    .promo {
+        flex-direction: column;
+    }
+
+    .promo img{
+        display: none;
+    }
+
+    nav {
+        width: 90%;
+        height: 100%;
+    }
+
+    nav ul li a{
+        height: 100%;
+        font-size: 3.5vw;
+        font-weight: bold;  
+        color: white;  
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        padding-top: 1.5%;
+        padding-bottom: 1.7%;
+    }
+
+    .actions button{
+        display: none;
+    }
+
+}
+
+/** dispositivos medianos (tablets) */
+@media (width > 767px) and (width <= 991px) {
+    .how-does-it-work .steps{
+        display:grid;
+        grid-template: repeat(4,1fr) / repeat(2,1fr);
+        text-align: center;
+        row-gap: 50px;
+    }
+
+    .promo {
+        flex-direction: column;
+    }
+
+    .promo img{
+        display: none;
+    }
+
+    .promo video{
+        width: 100%;
+    }
+
+    nav ul {
+        height: 100%;
+        width: 85%;
+    }
+
+
+    nav ul li a{
+        height: 100%;
+        font-size: 2.5vw;
+        font-weight: bold;  
+        color: white;  
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        padding-top: 2.2%;
+        padding-bottom: 2.3%;
+    }
+
+}
+
+/** dispositivos grandes (desktops) */
+@media (width > 991px) and (width <= 1199px) {
+
+    nav ul li a{
+        font-size: 2vw;
+        font-weight: bold;  
+        color: white;  
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        padding-top: 2.7%;
+        padding-bottom: 2.7%;
+    }
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (width > 1199px) {
+
+    nav ul li a{
+        font-size: 2vw;
+        font-weight: bold;  
+        color: white;  
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        padding-top: 2.7%;
+        padding-bottom: 2.7%;
+    }
 }
