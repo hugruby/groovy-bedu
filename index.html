@@ -68,13 +68,23 @@
           </nav>
         </header>
         
+        <script>
+          function miFuncion(){
+            var elementos = document.getElementsByClassName("demo");
+  
+            for (var i = 0; i < elementos.length; i++) {
+              elementos[i].innerHTML = "Paragraph changed.";
+            }
+          }
+        </script>
         <main>
+            <button class="btn btn-outline-success" type="submit" onclick="miFuncion()">Search</button>
             <h1>Bienvenido a tu nuevo <b>Blog!!</b></h1>
-            <p>
+            <p class="demo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus nisi, rhoncus et rhoncus ac, aliquam at ante. Fusce pellentesque, magna eget laoreet dapibus, turpis ipsum interdum tortor, non scelerisque velit justo vel enim. In enim tortor, imperdiet non ligula quis, viverra dapibus est. Ut tempus rutrum felis, sit amet lacinia tortor. Nam pharetra dui a scelerisque consectetur. Morbi nibh sem, dignissim vestibulum faucibus at, elementum eget dui. Phasellus eu augue sollicitudin, porttitor est nec, lobortis arcu.
                 Integer <b>ultrices semper nulla id imperdiet. Maecenas sagittis dui vitae enim cursus consequat. Integer facilisis varius lectus in eleifend. Quisque risus purus, volutpat quis ultricies ac, eleifend ac felis. Praesent vulputate ac magna eget auctor. Aliquam fermentum egestas quam, non vulputate mi ultricies fringilla.</b> Mauris mattis, eros vel tempor cursus, leo justo facilisis neque, eget consequat nunc lorem nec orci. Phasellus dignissim dolor est, nec tincidunt dolor semper vel. Sed gravida et ex fermentum laoreet.
             </p>
-            <p>
+            <p class="demo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus nisi, rhoncus et rhoncus ac, aliquam at ante. Fusce pellentesque, magna eget laoreet dapibus, turpis ipsum interdum tortor, non scelerisque velit justo vel enim. In enim tortor, imperdiet non ligula quis, viverra dapibus est. Ut tempus rutrum felis, sit amet lacinia tortor. Nam pharetra dui a scelerisque consectetur. Morbi nibh sem, dignissim vestibulum faucibus at, elementum eget dui. Phasellus eu augue sollicitudin, porttitor est nec, lobortis arcu.
                 Integer <b>ultrices semper nulla id imperdiet. Maecenas sagittis dui vitae enim cursus consequat. Integer facilisis varius lectus in eleifend. Quisque risus purus, volutpat quis ultricies ac, eleifend ac felis. Praesent vulputate ac magna eget auctor. Aliquam fermentum egestas quam, non vulputate mi ultricies fringilla.</b> Mauris mattis, eros vel tempor cursus, leo justo facilisis neque, eget consequat nunc lorem nec orci. Phasellus dignissim dolor est, nec tincidunt dolor semper vel. Sed gravida et ex fermentum laoreet.
             </p>
@@ -271,7 +281,19 @@
               </div>
             </article> -->
         </section>
+        
         <section class="features">
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+
             <article class="feature-card">
               <div class="feature-content">
                 <figure>

@@ -163,6 +163,7 @@ main h1{
     position: absolute;
     z-index: -1;
     left: 25%;
+    top:135%
 }
 
 .promo video{
@@ -284,19 +285,19 @@ button {
 
 
 .features .feature-card .feature-content h3 {
-    font-size: 2vw;
+    font-size: 3vh;
     color: #343434;
     font-weight: 400;
 }
 
 .features .feature-card .feature-content p {
-    font-size: 1vw;
+    font-size: 2vh;
     color: #7e7e7e;
     font-weight: 400;
 }
 
 .features .feature-card .feature-content a {
-    font-size: 1vw;
+    font-size: 2vh;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
@@ -400,9 +401,7 @@ button {
     text-decoration: none;
 }
 
-@media (color) and (width>500px) {
-    
-}
+
 /** dispositivos móviles en vista viewport (vertical) */
 @media  (width <= 575px) {
     .actions button{
@@ -444,8 +443,11 @@ button {
         padding-top: 2.1%;
         padding-bottom: 2.2%;
     } */
+    .features{
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    }
 
-
+    
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
@@ -494,6 +496,10 @@ button {
         display: none;
     }
 
+    .features{
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    }
+
 }
 
 /** dispositivos medianos (tablets) */
@@ -517,6 +523,10 @@ button {
         width: 100%;
     }
 
+    .features{
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    }
+
     /* nav ul {
         height: 100%;
         width: 85%;
@@ -538,7 +548,24 @@ button {
 
 /** dispositivos grandes (desktops) */
 @media (width > 991px) and (width <= 1199px) {
-
+    .features .feature-card .feature-content h3 {
+        font-size: 2vh;
+        color: #343434;
+        font-weight: 400;
+    }
+    
+    .features .feature-card .feature-content p {
+        font-size: 2vh;
+        color: #7e7e7e;
+        font-weight: 400;
+    }
+    
+    .features .feature-card .feature-content a {
+        font-size: 2vh;
+        color: #67b54b;
+        font-weight: 600;
+        text-decoration: none;
+    }
     /* nav ul li a{
         font-size: 2vw;
         font-weight: bold;  
@@ -562,4 +589,16 @@ button {
         padding-top: 2.7%;
         padding-bottom: 2.7%;
     } */
+
+    .features .feature-card .feature-content h3 {
+        font-size: 2vh;
+        color: #343434;
+        font-weight: 400;
+    }
+
+    .features .feature-card .feature-content p {
+        font-size: 1.5vh;
+        color: #7e7e7e;
+        font-weight: 400;
+    }
 }
