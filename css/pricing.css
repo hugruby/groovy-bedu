@@ -1,0 +1,34 @@
+.navbar img{
+    width: 10rem;
+}
+
+.carousel-container {
+    max-width: 50%;
+    height: auto;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+.carousel-item img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes según tus necesidades */
+    height: auto; /* Mantiene la proporción de aspecto original de las imágenes */
+}
+
+
+.accordion h5{
+    color: #1567f4;
+}
+
+.colormio h3{
+    color:#487DB4;
+}
+
+.colormio p>b{
+    color:green;
+}
+
+main h1{
+    position: relative;
+    margin: 0 auto;
+    left: 10%;
+}
