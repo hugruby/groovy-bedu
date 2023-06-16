@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-    <head>
-        <title>BEDU</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" >       
-        <link rel="stylesheet" type="text/css" href="css/style.css">        
-        <meta 
-          name="viewport" 
-          content="width=device-width,initial-scale=1.0,user-scalable=no"
-        />
-    </head>
-    <body>
-        <!-- <header>
+  <head>
+    <title>BEDU</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+  </head>
+  <body>
+    <!-- <header>
             <div class="logo">
                 <a href="/index.html" >
                     <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="logo">
@@ -27,119 +32,196 @@
                 <button>Suscribete</button>
             </div>
         </header> -->
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-gradient" style="background-color: #fffbf7;">
-            <div class="container-fluid">
-              <a class="navbar-brand logo" href="/index.html">
-                <img class="logo" src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="Matcha"/>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pricing.html">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/features.html">Features</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-gradient"
+        style="background-color: #fffbf7"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="/index.html">
+            <img
+              class="logo"
+              src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png"
+              alt="Matcha"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/features.html"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        </header>
-        
-        <script>
-          function miFuncion(){
-            var elementos = document.getElementsByClassName("demo");
-  
-            for (var i = 0; i < elementos.length; i++) {
-              elementos[i].innerHTML = "Paragraph changed.";
-            }
-          }
-        </script>
-        <main>
-            <button class="btn btn-outline-success" type="submit" onclick="miFuncion()">Search</button>
-            <h1>Bienvenido a tu nuevo <b>Blog!!</b></h1>
-            <p class="demo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus nisi, rhoncus et rhoncus ac, aliquam at ante. Fusce pellentesque, magna eget laoreet dapibus, turpis ipsum interdum tortor, non scelerisque velit justo vel enim. In enim tortor, imperdiet non ligula quis, viverra dapibus est. Ut tempus rutrum felis, sit amet lacinia tortor. Nam pharetra dui a scelerisque consectetur. Morbi nibh sem, dignissim vestibulum faucibus at, elementum eget dui. Phasellus eu augue sollicitudin, porttitor est nec, lobortis arcu.
-                Integer <b>ultrices semper nulla id imperdiet. Maecenas sagittis dui vitae enim cursus consequat. Integer facilisis varius lectus in eleifend. Quisque risus purus, volutpat quis ultricies ac, eleifend ac felis. Praesent vulputate ac magna eget auctor. Aliquam fermentum egestas quam, non vulputate mi ultricies fringilla.</b> Mauris mattis, eros vel tempor cursus, leo justo facilisis neque, eget consequat nunc lorem nec orci. Phasellus dignissim dolor est, nec tincidunt dolor semper vel. Sed gravida et ex fermentum laoreet.
-            </p>
-            <p class="demo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus nisi, rhoncus et rhoncus ac, aliquam at ante. Fusce pellentesque, magna eget laoreet dapibus, turpis ipsum interdum tortor, non scelerisque velit justo vel enim. In enim tortor, imperdiet non ligula quis, viverra dapibus est. Ut tempus rutrum felis, sit amet lacinia tortor. Nam pharetra dui a scelerisque consectetur. Morbi nibh sem, dignissim vestibulum faucibus at, elementum eget dui. Phasellus eu augue sollicitudin, porttitor est nec, lobortis arcu.
-                Integer <b>ultrices semper nulla id imperdiet. Maecenas sagittis dui vitae enim cursus consequat. Integer facilisis varius lectus in eleifend. Quisque risus purus, volutpat quis ultricies ac, eleifend ac felis. Praesent vulputate ac magna eget auctor. Aliquam fermentum egestas quam, non vulputate mi ultricies fringilla.</b> Mauris mattis, eros vel tempor cursus, leo justo facilisis neque, eget consequat nunc lorem nec orci. Phasellus dignissim dolor est, nec tincidunt dolor semper vel. Sed gravida et ex fermentum laoreet.
-            </p>
-            <section class="promo">
-                <video poster="/imgs/computer_code00_small.jpeg"  controls loop autoplay muted>
-                    <source src="/media/computer_code00_preview.mp4"  type="video/mp4" >
-                    <source src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" type="video/webm" >
-                    Tu navegador no soporta la etiqueta de video.                    
-                </video>
-                
-                <article class="articulo"> 
-                    <h3>Publish to your blog in minutes, not hours.</h3>
-                    <p>
-                    Your blog is your most powerful asset to build, engage, and retain a
-                    loyal audience. But you don’t have hours to create content that may or
-                    may not work. With Matcha, instantly publish from our library of
-                    10,000+ professionally written articles and build your email list
-                    faster with our powerful conversion tool.
-                    </p>
-                    <div>
-                    <p>Start publishing today:</p>
-                    <form class="signup-form">
-                        <input type="email" placeholder="Enter email" />
-                        <button>Start My Trial</button>
-                    </form>
-                    </div>
-                </article>           
-                <img width="100px"
-                    src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
-                    alt="See how it works"
-                    />
-            </section> 
-
-            
-        </main>
-        <section class="success-stories">
-            <article class="overview">
-              <h2>Growing ecommerce brands rely on Matcha.</h2>
-              <p>
-                Are you tired of wasting time publishing blog articles to only see a
-                trickle of traffic and no impact on sales? Join hundreds of business
-                owners and ecommerce marketers who rely on Matcha for quality content
-                and consistent performance from their blogs.
-              </p>
-              <button>
-                Who Uses Matcha?
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
               </button>
-              <figure>
-                <img
-                  src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
-                  alt="Brands"
-                />
-              </figure>
-            </article>
-            <!-- <article class="stories-carousel">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      function miFuncion() {
+        var elementos = document.getElementsByClassName("demo");
+
+        for (var i = 0; i < elementos.length; i++) {
+          elementos[i].innerHTML = "Paragraph changed.";
+        }
+      }
+    </script>
+    <main>
+      <button
+        class="btn btn-outline-success"
+        type="submit"
+        onclick="miFuncion()"
+      >
+        Search
+      </button>
+      <h1>Bienvenido a tu nuevo <b>Blog!!</b></h1>
+      <p class="demo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus
+        nisi, rhoncus et rhoncus ac, aliquam at ante. Fusce pellentesque, magna
+        eget laoreet dapibus, turpis ipsum interdum tortor, non scelerisque
+        velit justo vel enim. In enim tortor, imperdiet non ligula quis, viverra
+        dapibus est. Ut tempus rutrum felis, sit amet lacinia tortor. Nam
+        pharetra dui a scelerisque consectetur. Morbi nibh sem, dignissim
+        vestibulum faucibus at, elementum eget dui. Phasellus eu augue
+        sollicitudin, porttitor est nec, lobortis arcu. Integer
+        <b
+          >ultrices semper nulla id imperdiet. Maecenas sagittis dui vitae enim
+          cursus consequat. Integer facilisis varius lectus in eleifend. Quisque
+          risus purus, volutpat quis ultricies ac, eleifend ac felis. Praesent
+          vulputate ac magna eget auctor. Aliquam fermentum egestas quam, non
+          vulputate mi ultricies fringilla.</b
+        >
+        Mauris mattis, eros vel tempor cursus, leo justo facilisis neque, eget
+        consequat nunc lorem nec orci. Phasellus dignissim dolor est, nec
+        tincidunt dolor semper vel. Sed gravida et ex fermentum laoreet.
+      </p>
+      <p class="demo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus
+        nisi, rhoncus et rhoncus ac, aliquam at ante. Fusce pellentesque, magna
+        eget laoreet dapibus, turpis ipsum interdum tortor, non scelerisque
+        velit justo vel enim. In enim tortor, imperdiet non ligula quis, viverra
+        dapibus est. Ut tempus rutrum felis, sit amet lacinia tortor. Nam
+        pharetra dui a scelerisque consectetur. Morbi nibh sem, dignissim
+        vestibulum faucibus at, elementum eget dui. Phasellus eu augue
+        sollicitudin, porttitor est nec, lobortis arcu. Integer
+        <b
+          >ultrices semper nulla id imperdiet. Maecenas sagittis dui vitae enim
+          cursus consequat. Integer facilisis varius lectus in eleifend. Quisque
+          risus purus, volutpat quis ultricies ac, eleifend ac felis. Praesent
+          vulputate ac magna eget auctor. Aliquam fermentum egestas quam, non
+          vulputate mi ultricies fringilla.</b
+        >
+        Mauris mattis, eros vel tempor cursus, leo justo facilisis neque, eget
+        consequat nunc lorem nec orci. Phasellus dignissim dolor est, nec
+        tincidunt dolor semper vel. Sed gravida et ex fermentum laoreet.
+      </p>
+      <section class="promo">
+        <video
+          poster="/imgs/computer_code00_small.jpeg"
+          controls
+          loop
+          autoplay
+          muted
+        >
+          <source src="/media/computer_code00_preview.mp4" type="video/mp4" />
+          <source
+            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
+            type="video/webm"
+          />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <article class="articulo">
+          <h3>Publish to your blog in minutes, not hours.</h3>
+          <p>
+            Your blog is your most powerful asset to build, engage, and retain a
+            loyal audience. But you don’t have hours to create content that may
+            or may not work. With Matcha, instantly publish from our library of
+            10,000+ professionally written articles and build your email list
+            faster with our powerful conversion tool.
+          </p>
+          <div>
+            <p>Start publishing today:</p>
+            <form class="signup-form">
+              <input type="email" placeholder="Enter email" />
+              <button>Start My Trial</button>
+            </form>
+          </div>
+        </article>
+        <img
+          width="100px"
+          src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
+          alt="See how it works"
+        />
+      </section>
+    </main>
+    <section class="success-stories">
+      <article class="overview">
+        <h2>Growing ecommerce brands rely on Matcha.</h2>
+        <p>
+          Are you tired of wasting time publishing blog articles to only see a
+          trickle of traffic and no impact on sales? Join hundreds of business
+          owners and ecommerce marketers who rely on Matcha for quality content
+          and consistent performance from their blogs.
+        </p>
+        <button>Who Uses Matcha?</button>
+        <figure>
+          <img
+            src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
+            alt="Brands"
+          />
+        </figure>
+      </article>
+      <!-- <article class="stories-carousel">
               <div
                 id="carouselExampleFade"
                 class="carousel slide carousel-fade"
@@ -280,176 +362,173 @@
                 </ol>
               </div>
             </article> -->
-        </section>
-        
-        <section class="features">
+    </section>
 
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-
-            <article class="feature-card">
-              <div class="feature-content">
-                <figure>
-                  <img src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g" alt="Publish icon">
-                </figure>
-                <h3>Fill your blog with engaging articles.</h3>
-                <p>
-                  Publish to your blog in less time than it takes to drink your
-                  morning coffee.
-                </p>
-                <a href="">Publish instantly →</a>
-              </div>
-              <div class="feature-image">
-                <figure>
-                  <img src="/imgs/imgPrueba.jpg" alt="Publish example">
-                </figure>
-              </div>
-            </article>
-
-
-            <article class="feature-card">
-              <div class="feature-content">
-                <figure>
-                  <img src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g" alt="Publish icon">
-                </figure>
-                <h3>Fill your blog with engaging articles.</h3>
-                <p>
-                  Publish to your blog in less time than it takes to drink your
-                  morning coffee.
-                </p>
-                <a href="">Publish instantly →</a>
-              </div>
-              <div class="feature-image">
-                <figure>
-                  <img src="/imgs/imgPrueba.jpg" alt="Publish example">
-                </figure>
-              </div>
-            </article>
-
-
-            <article class="feature-card">
-              <div class="feature-content">
-                <figure>
-                  <img src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g" alt="Publish icon">
-                </figure>
-                <h3>Fill your blog with engaging articles.</h3>
-                <p>
-                  Publish to your blog in less time than it takes to drink your
-                  morning coffee.
-                </p>
-                <a href="">Publish instantly →</a>
-              </div>
-              <div class="feature-image">
-                <figure>
-                  <img src="/imgs/imgPrueba.jpg" alt="Publish example">
-                </figure>
-              </div>
-            </article>
-
-
-
-            <article class="feature-card">
-              <div class="feature-content">
-                <figure>
-                  <img src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g" alt="Publish icon">
-                </figure>
-                <h3>Fill your blog with engaging articles.</h3>
-                <p>
-                  Publish to your blog in less time than it takes to drink your
-                  morning coffee.
-                </p>
-                <a href="">Publish instantly →</a>
-              </div>
-              <div class="feature-image">
-                <figure>
-                  <img src="/imgs/imgPrueba.jpg" alt="Publish example">
-                </figure>
-              </div>
-            </article>
-            
-            
-
-
-        </section>
-
-        <section class="how-does-it-work">
-          <h2 class="title">How does Matcha wok?</h2>
-          <p class="description">
-            Your blog can be so much more than window dressing. Use Matcha’s
-            <a href="#">simple formula</a> to transform your blog into an ecommerce
-            growth engine.
+    <section class="features">
+      <article class="feature-card">
+        <div class="feature-content">
+          <figure>
+            <img
+              src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+              alt="Publish icon"
+            />
+          </figure>
+          <h3>Fill your blog with engaging articles.</h3>
+          <p>
+            Publish to your blog in less time than it takes to drink your
+            morning coffee.
           </p>
-          <button>Explore the Platform</button>
-          <div class="steps">
-            <article class="card-step">
-              <div class="card-step-image">
-                <img src="/imgs/how1.jpg" alt="Publish" class="card-step-bg">
-                <img src="" alt="Content icon" class="card-step-icon">
-              </div>
-              <div class="card-step-body">
-                <h3>Publish</h3>
-                <p>
-                  Effortlessly fill your blog with content that shoppers want to
-                  read.
-                </p>
-                <a href="#">Publish instantly →</a>
-              </div>
-            </article>
-            <article class="card-step">
-              <div class="card-step-image">
-                <img src="/imgs/how2.jpg" alt="Promote" class="card-step-bg">
-                <img src="" alt="Channels icon" class="card-step-icon">
-              </div>
-              <div class="card-step-body">
-                <h3>Promote</h3>
-                <p>
-                  Use articles in email, social, and content ads to attract more
-                  site visitors.
-                </p>
-                <a href="#">Drrive morer site visitors →</a>
-              </div>
-            </article>
-            <article class="card-step">
-              <div class="card-step-image">
-                <img src="/imgs/how3.jpg" alt="Capture" class="card-step-bg">
-                <img src="" alt="Funnel icon" class="card-step-icon">
-              </div>
-              <div class="card-step-body">
-                <h3>Capture</h3>
-                <p>
-                  Turn readers into email subscribers and subscribers into
-                  customers.
-                </p>
-                <a href="#">Grow your email list →</a>
-              </div>
-            </article>
-            <article class="card-step">
-              <div class="card-step-image">
-                <img src="/imgs/how4.jpg" alt="Measure" class="card-step-bg">
-                <img src="" alt="Chart icon" class="card-step-icon">
-              </div>
-              <div class="card-step-body">
-                <h3>Measure</h3>
-                <p>
-                  See what’s working and what’s not to easily optimize for more
-                  traffic, email subscribers, and sales.
-                </p>
-                <a href="#">Track performance →</a>
-              </div>
-            </article>
-          </div>
-        </section>
+          <a href="">Publish instantly →</a>
+        </div>
+        <div class="feature-image">
+          <figure>
+            <img src="/imgs/imgPrueba.jpg" alt="Publish example" />
+          </figure>
+        </div>
+      </article>
 
-        <footer>
-            <!---Insertar footer-->
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+      <article class="feature-card">
+        <div class="feature-content">
+          <figure>
+            <img
+              src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+              alt="Publish icon"
+            />
+          </figure>
+          <h3>Fill your blog with engaging articles.</h3>
+          <p>
+            Publish to your blog in less time than it takes to drink your
+            morning coffee.
+          </p>
+          <a href="">Publish instantly →</a>
+        </div>
+        <div class="feature-image">
+          <figure>
+            <img src="/imgs/imgPrueba.jpg" alt="Publish example" />
+          </figure>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-content">
+          <figure>
+            <img
+              src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+              alt="Publish icon"
+            />
+          </figure>
+          <h3>Fill your blog with engaging articles.</h3>
+          <p>
+            Publish to your blog in less time than it takes to drink your
+            morning coffee.
+          </p>
+          <a href="">Publish instantly →</a>
+        </div>
+        <div class="feature-image">
+          <figure>
+            <img src="/imgs/imgPrueba.jpg" alt="Publish example" />
+          </figure>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-content">
+          <figure>
+            <img
+              src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+              alt="Publish icon"
+            />
+          </figure>
+          <h3>Fill your blog with engaging articles.</h3>
+          <p>
+            Publish to your blog in less time than it takes to drink your
+            morning coffee.
+          </p>
+          <a href="">Publish instantly →</a>
+        </div>
+        <div class="feature-image">
+          <figure>
+            <img src="/imgs/imgPrueba.jpg" alt="Publish example" />
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section class="how-does-it-work">
+      <h2 class="title">How does Matcha wok?</h2>
+      <p class="description">
+        Your blog can be so much more than window dressing. Use Matcha’s
+        <a href="#">simple formula</a> to transform your blog into an ecommerce
+        growth engine.
+      </p>
+      <button>Explore the Platform</button>
+      <div class="steps">
+        <article class="card-step">
+          <div class="card-step-image">
+            <img src="/imgs/how1.jpg" alt="Publish" class="card-step-bg" />
+            <img src="" alt="Content icon" class="card-step-icon" />
+          </div>
+          <div class="card-step-body">
+            <h3>Publish</h3>
+            <p>
+              Effortlessly fill your blog with content that shoppers want to
+              read.
+            </p>
+            <a href="#">Publish instantly →</a>
+          </div>
+        </article>
+        <article class="card-step">
+          <div class="card-step-image">
+            <img src="/imgs/how2.jpg" alt="Promote" class="card-step-bg" />
+            <img src="" alt="Channels icon" class="card-step-icon" />
+          </div>
+          <div class="card-step-body">
+            <h3>Promote</h3>
+            <p>
+              Use articles in email, social, and content ads to attract more
+              site visitors.
+            </p>
+            <a href="#">Drrive morer site visitors →</a>
+          </div>
+        </article>
+        <article class="card-step">
+          <div class="card-step-image">
+            <img src="/imgs/how3.jpg" alt="Capture" class="card-step-bg" />
+            <img src="" alt="Funnel icon" class="card-step-icon" />
+          </div>
+          <div class="card-step-body">
+            <h3>Capture</h3>
+            <p>
+              Turn readers into email subscribers and subscribers into
+              customers.
+            </p>
+            <a href="#">Grow your email list →</a>
+          </div>
+        </article>
+        <article class="card-step">
+          <div class="card-step-image">
+            <img src="/imgs/how4.jpg" alt="Measure" class="card-step-bg" />
+            <img src="" alt="Chart icon" class="card-step-icon" />
+          </div>
+          <div class="card-step-body">
+            <h3>Measure</h3>
+            <p>
+              See what’s working and what’s not to easily optimize for more
+              traffic, email subscribers, and sales.
+            </p>
+            <a href="#">Track performance →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <!---Insertar footer-->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
