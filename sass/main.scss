@@ -20,7 +20,22 @@
 }
 
 .blog2{
-    @include repetido(400px,#010203)
+    @include repetido(250px,$light-green);
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes mianimacion {
+    0%   {background-color: $light-green; left: 0; top: 0;}
+    25%  {background-color: red; left: 300px; top: 0;}
+    50%  {background-color: $verde; left: 300px; top: 300px;}
+    75%  {background-color: pink; left: 0; top:300px;}
+    100% {background-color: $azul; left: 0; top: 0;}
 }
 
 .title {

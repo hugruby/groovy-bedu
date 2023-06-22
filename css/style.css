@@ -646,6 +646,15 @@ button {
     color: white;
 }
 
+.cta .box form button:hover {
+    background-color: #62aeb5;
+    /* padding: 6px 20px;
+    max-width: 250px;
+    height:60px;
+    font-size: 19px!important;;
+    color: white; */
+}
+
 .cta input {
     border: 1px solid #b6b6b6;
     padding-left:20px;

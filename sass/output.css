@@ -15,11 +15,45 @@
 }
 
 .blog2 {
-  height: 400px;
-  width: 400px;
-  background-color: #010203;
+  height: 250px;
+  width: 250px;
+  background-color: #cfffbe;
+  animation-name: mianimacion;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: relative;
 }
 
+@keyframes mianimacion {
+  0% {
+    background-color: #cfffbe;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0;
+  }
+  50% {
+    background-color: #042729;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: pink;
+    left: 0;
+    top: 300px;
+  }
+  100% {
+    background-color: #04A3F9;
+    left: 0;
+    top: 0;
+  }
+}
 div ul {
   list-style: none;
 }
