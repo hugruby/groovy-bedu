@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+
+@mixin repetido($tamano,$color){
+    height:$tamano;
+    width:$tamano;
+    background-color:$color;
+}
+
+.blog{
+    @include repetido($size,$light-green);
+    margin:0 auto;
+    // @media(orientation:landscape){
+    //     background-color: $azul;
+    // }
+
+    @if(1+1==2){
+        border:2px solid $azul;
+    }
+}
+
+.blog2{
+    @include repetido(400px,#010203)
+}
+
+.title {
+    @extend %base-title;
+}
+
+
+
+
+div {
+    ul{
+        list-style: none;
+        li{
+            font-size: 1em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+}

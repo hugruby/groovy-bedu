@@ -1,0 +1,31 @@
+/** colores */
+/** fuentes */
+/** placeholders */
+.title {
+  font-family: "Alegreya", serif;
+  color: #042729;
+}
+
+.blog {
+  height: 600px;
+  width: 600px;
+  background-color: #cfffbe;
+  margin: 0 auto;
+  border: 2px solid #04A3F9;
+}
+
+.blog2 {
+  height: 400px;
+  width: 400px;
+  background-color: #010203;
+}
+
+div ul {
+  list-style: none;
+}
+div ul li {
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*# sourceMappingURL=output.css.map */
