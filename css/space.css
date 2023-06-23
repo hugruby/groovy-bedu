@@ -1,0 +1,155 @@
+.espacio {
+  margin: 0 auto;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 35px;
+  margin-top: 50px;
+}
+.espacio .nave-contenedor {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 65px;
+}
+.espacio .nave-contenedor .nave {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: -470px;
+  animation-name: despegue, vuelo;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+.espacio .nave-contenedor .nave img {
+  width: 70px;
+  content: url("/imgs/spaceship.png");
+}
+@keyframes despegue {
+  0% {
+    bottom: -470px;
+  }
+  100% {
+    bottom: 360px;
+    content: url("/imgs/cohete_kaboom3.png");
+  }
+}
+@keyframes vuelo {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -30px;
+  }
+  50% {
+    left: 0px;
+  }
+  85% {
+    content: url("/imgs/cohete_kaboom.png");
+    transform: rotate(20deg);
+  }
+  100% {
+    content: url("/imgs/cohete_kaboom3.png");
+  }
+}
+.espacio .nave-contenedor-lateral {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 10px;
+}
+.espacio .nave-contenedor-lateral .nave-lateral {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 150px;
+  left: 0;
+  animation-name: vuelo-lateral, vuelo-abajo;
+  animation-duration: 8s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+.espacio .nave-contenedor-lateral .nave-lateral img {
+  width: 70px;
+  transform: rotate(80deg);
+  content: url("/imgs/spaceship.png");
+}
+@keyframes vuelo-lateral {
+  0% {
+    left: 0;
+  }
+  70% {
+    content: url("/imgs/cohete_kaboom.png");
+  }
+  100% {
+    left: 2000px;
+    content: url("/imgs/cohete_kaboom3.png");
+  }
+}
+@keyframes vuelo-abajo {
+  70% {
+    content: url("/imgs/cohete_kaboom.png");
+  }
+  72% {
+    content: url("/imgs/cohete_kaboom3.png");
+    transform: rotate(-90deg);
+  }
+  74% {
+    content: url("/imgs/cohete_kaboom3.png");
+  }
+}
+
+.botones {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 620px;
+}
+
+.botones button {
+  width: 208px;
+  height: 50px;
+  margin-left: 0;
+  background-color: #A75E4D;
+}
+
+.texto-boton {
+  font-size: 1rem;
+  height: 100%;
+  padding: 6px 20px;
+  margin-left: -10px;
+  color: #fff;
+  background-color: #025157;
+  border-radius: 8px;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.texto-boton span {
+  position: relative;
+  z-index: 2;
+}
+
+.texto-boton.uno::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: #67b54b;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in-out all;
+}
+
+.texto-boton.uno:hover::after {
+  top: 0;
+}
+
+/*# sourceMappingURL=space.css.map */
