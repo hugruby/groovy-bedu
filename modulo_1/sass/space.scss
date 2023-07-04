@@ -24,7 +24,7 @@
             // animation-delay: 1s;
             img{
                 width:70px;
-                content:url("/imgs/spaceship.png")
+                content:url("../imgs/spaceship.png")
             }
         }
     }
@@ -34,15 +34,15 @@
 
     @keyframes despegue {
         0%{bottom:-470px;}
-        100%{bottom:360px; content:url("/imgs/cohete_kaboom3.png");}
+        100%{bottom:360px; content:url("../imgs/cohete_kaboom3.png");}
     }
 
     @keyframes vuelo{
         0%    {left: 0;}
         25%   {left: -30px;}
         50%   {left: 0px;}
-        85%   {content:url("/imgs/cohete_kaboom.png"); transform: rotate(20deg);}
-        100%   {content:url("/imgs/cohete_kaboom3.png");}
+        85%   {content:url("../imgs/cohete_kaboom.png"); transform: rotate(20deg);}
+        100%   {content:url("../imgs/cohete_kaboom3.png");}
     }
 
 
@@ -67,7 +67,7 @@
             img{
                 width:70px;
                 transform: rotate(80deg);
-                content:url("/imgs/spaceship.png")
+                content:url("../imgs/spaceship.png")
             }
         }
 
@@ -76,14 +76,14 @@
 
     @keyframes vuelo-lateral{
         0%{left: 0;}
-        70%{content:url("/imgs/cohete_kaboom.png"); }
+        70%{content:url("../imgs/cohete_kaboom.png"); }
         100%{left: 2000px;content:url("/imgs/cohete_kaboom3.png");}
     }
 
     @keyframes vuelo-abajo { 
-        70%{content:url("/imgs/cohete_kaboom.png");}
-        72%{content:url("/imgs/cohete_kaboom3.png"); transform: rotate(-90deg);}
-        74%{content:url("/imgs/cohete_kaboom3.png");}
+        70%{content:url("../imgs/cohete_kaboom.png");}
+        72%{content:url("../imgs/cohete_kaboom3.png"); transform: rotate(-90deg);}
+        74%{content:url("../imgs/cohete_kaboom3.png");}
     }
 
 }

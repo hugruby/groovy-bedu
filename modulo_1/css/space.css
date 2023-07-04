@@ -24,7 +24,7 @@
 }
 .espacio .nave-contenedor .nave img {
   width: 70px;
-  content: url("/imgs/spaceship.png");
+  content: url("../imgs/spaceship.png");
 }
 @keyframes despegue {
   0% {
@@ -32,7 +32,7 @@
   }
   100% {
     bottom: 360px;
-    content: url("/imgs/cohete_kaboom3.png");
+    content: url("../imgs/cohete_kaboom3.png");
   }
 }
 @keyframes vuelo {
@@ -46,11 +46,11 @@
     left: 0px;
   }
   85% {
-    content: url("/imgs/cohete_kaboom.png");
+    content: url("../imgs/cohete_kaboom.png");
     transform: rotate(20deg);
   }
   100% {
-    content: url("/imgs/cohete_kaboom3.png");
+    content: url("../imgs/cohete_kaboom3.png");
   }
 }
 .espacio .nave-contenedor-lateral {
@@ -75,14 +75,14 @@
 .espacio .nave-contenedor-lateral .nave-lateral img {
   width: 70px;
   transform: rotate(80deg);
-  content: url("/imgs/spaceship.png");
+  content: url("../imgs/spaceship.png");
 }
 @keyframes vuelo-lateral {
   0% {
     left: 0;
   }
   70% {
-    content: url("/imgs/cohete_kaboom.png");
+    content: url("../imgs/cohete_kaboom.png");
   }
   100% {
     left: 2000px;
@@ -91,14 +91,14 @@
 }
 @keyframes vuelo-abajo {
   70% {
-    content: url("/imgs/cohete_kaboom.png");
+    content: url("../imgs/cohete_kaboom.png");
   }
   72% {
-    content: url("/imgs/cohete_kaboom3.png");
+    content: url("../imgs/cohete_kaboom3.png");
     transform: rotate(-90deg);
   }
   74% {
-    content: url("/imgs/cohete_kaboom3.png");
+    content: url("../imgs/cohete_kaboom3.png");
   }
 }
 
