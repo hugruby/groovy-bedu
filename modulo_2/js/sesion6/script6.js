@@ -108,3 +108,11 @@ const triangulo = new Triangulo(4,6);
 console.log(triangulo)
 console.log(triangulo.__proto__)
 console.log(triangulo.calculaArea())
+
+
+Object.prototype.saluda = function(){
+    console.log("holaa")
+  }
+  
+  t1.saluda()
+  

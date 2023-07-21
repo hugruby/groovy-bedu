@@ -24,3 +24,13 @@ const car = {
   console.log('After calling addColor()', car)
   console.log('After calling addColor()', sameCar)
   console.log('Same car?', car === sameCar) // true
+
+
+
+  const points = [40, 100, 1, 5, 25, 10];
+  
+  points.sort(function(a,b){
+    return b-a
+  });
+
+  console.log(points)
