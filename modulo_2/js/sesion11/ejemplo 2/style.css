@@ -1,0 +1,31 @@
+/* Estilo de la tabla */
+.table-styled {
+    width: 50%;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Estilo de las celdas de encabezado */
+  .table-styled th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  /* Estilo de las celdas de datos */
+  .table-styled td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Estilo para alternar colores de filas */
+  .table-styled tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para resaltar al pasar el cursor sobre una fila */
+  .table-styled tr:hover {
+    background-color: #e5e5e5;
+  }

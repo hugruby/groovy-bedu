@@ -1,4 +1,4 @@
-const link = document.body.getElementsByTagName('a')[0];
+const link = document.getElementsByTagName('a')[0];
 console.log(link);
 
 const title = document.getElementById('title');

@@ -1,6 +1,6 @@
 //RETO 2 sesion 7
-/*Crear una función compact que recibe un arreglo y retorna un nuevo arreglo sin incluir los valores que 
-sean falsy.*/
+/*Crear una función compact que recibe un arreglo y retorna un nuevo arreglo 
+sin incluir los valores que sean falsy.*/
 
 function compact(array) {
     const arrayFil = array.filter((acc) => acc)

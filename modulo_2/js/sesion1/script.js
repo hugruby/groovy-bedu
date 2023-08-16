@@ -105,7 +105,7 @@ console.log(-7 / 0);  // -Infinity
 var aasda = "Hola que tal";
 var b = 'Hello World';
 
-console.log(`dasd ${1+4}`);	// undefined
+console.log(`dasd ${1+4}`);	
 console.log(b);	// Hello World
 
 

@@ -13,12 +13,12 @@ if (time < 12) {
 
 console.log(greeting) // Good afternoon
 
-admin.permiso && <miModuloChingon>
+// admin.permiso && <miModuloChingon>
 
-title = title ?? title.miTitulo
+title = title ?? title.miTitulo;
 
 //RETO 2
-// for (let i = 0; i <= 100; i++){
+//  for (let i = 0; i <= 100; i++){
 //     if(i%2 === 0 ){
 //         console.log(i);
 //     }
