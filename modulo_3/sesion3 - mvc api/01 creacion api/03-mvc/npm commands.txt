@@ -1,0 +1,9 @@
+npm init -y
+npm install express
+npm install --save-dev nodemon
+npm start or npm run start:dev
+
+"scripts": {
+    "start": "nodemon index.js",
+    "start:dev": "nodemon index.js"
+  },
